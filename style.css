@@ -850,3 +850,49 @@ footer .subscribe .copyright .terms {
 
 /*<------------------------------ Media Queries starts ------------------------------> */
 
+@media (max-width: 425px) {
+  header {
+    width: 425px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 445px;
+  }
+
+  header.log-sign {
+    display: flex;
+  }
+
+  header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    font-size: 16px;
+    font-family: "poppins", sans-serif;
+    margin-left: 10px;
+  }
+
+  header nav .login {
+    color: #fd8d3a;
+    font-family: "poppins", sans-serif;
+    margin-right: 0px;
+  }
+
+  header nav .signup {
+    font-family: "poppins", sans-serif;
+    margin-left: 0px;
+    background-color: #fa7436;
+    padding-inline: 25px;
+    padding-block: 9px;
+    color: white;
+    border-radius: 5px;
+  }
+
+  header .container {
+    display: grid;
+    margin-top: 25px;
+  }
+}

@@ -850,49 +850,431 @@ footer .subscribe .copyright .terms {
 
 /*<------------------------------ Media Queries starts ------------------------------> */
 
-@media (max-width: 425px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   header {
-    width: 425px;
+    width: 100%;
+    padding: 0 20px;
   }
 
   header nav {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    width: 445px;
-  }
-
-  header.log-sign {
-    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   header nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 10px;
-    font-size: 16px;
-    font-family: "poppins", sans-serif;
-    margin-left: 10px;
-  }
-
-  header nav .login {
-    color: #fd8d3a;
-    font-family: "poppins", sans-serif;
-    margin-right: 0px;
-  }
-
-  header nav .signup {
-    font-family: "poppins", sans-serif;
-    margin-left: 0px;
-    background-color: #fa7436;
-    padding-inline: 25px;
-    padding-block: 9px;
-    color: white;
-    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    margin-left: 0;
   }
 
   header .container {
-    display: grid;
-    margin-top: 25px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: static;
+  }
+
+  header .container .left {
+    position: static;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  header .container .right {
+    position: static;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  header .info {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .things-section .things {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .things-section .todo-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .discount-section .countries {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vacation-section .things {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .vacation-section .vacation-places {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-section .feedback {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .testimonial-section .feedback .first,
+  .testimonial-section .feedback .second,
+  .testimonial-section .feedback .third {
+    position: static;
+    text-align: center;
+  }
+
+  .testimonial-section .feedback .second .testimonial-card1,
+  .testimonial-section .feedback .second .testimonial-card2 {
+    position: static;
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .blog-section .blog-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .subscribe .offer {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  footer .subscribe .offer .get {
+    position: static;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  footer .subscribe .offer form {
+    position: static;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .subscribe .offer form input {
+    padding: 16px 20px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  footer .subscribe .offer form .sub {
+    position: static;
+    margin: 0;
+  }
+
+  footer .subscribe .about-us {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  footer .subscribe .about-us .contact {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+  }
+
+  footer .subscribe .copyright {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
+
+@media (min-width: 426px) and (max-width: 767px) {
+  header {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: static;
+  }
+
+  header .container .left,
+  header .container .right {
+    position: static;
+    text-align: center;
+  }
+
+  header .info {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .things-section .things {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0 10px;
+    align-items: center;
+  }
+
+  .things-section .todo-cards {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .discount-section .countries {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vacation-section .things,
+  .vacation-section .vacation-places {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .testimonial-section .feedback {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0 10px;
+  }
+
+  .testimonial-section .feedback .first,
+  .testimonial-section .feedback .second {
+    position: static;
+    text-align: center;
+  }
+
+  .testimonial-section .feedback .second .testimonial-card1,
+  .testimonial-section .feedback .second .testimonial-card2 {
+    position: static;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .blog-section .blog-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .subscribe .offer {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+
+  footer .subscribe .offer .get {
+    position: static;
+    font-size: 28px;
+  }
+
+  footer .subscribe .offer form {
+    position: static;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .subscribe .offer form input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 10px;
+  }
+
+  footer .subscribe .offer form .sub {
+    position: static;
+    margin: 0;
+  }
+
+  footer .subscribe .about-us {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+  }
+
+  footer .subscribe .about-us .contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .subscribe .copyright {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+
+  header .container .left,
+  header .container .right {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  header .info {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .things-section,
+  .vacation-section {
+    padding: 40px 10px;
+  }
+
+  .things-section .things,
+  .vacation-section .things {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .things-section .todo-cards,
+  .vacation-section .vacation-places {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .discount-section .countries {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-section .feedback {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .testimonial-section .feedback .first,
+  .testimonial-section .feedback .second {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .testimonial-section .feedback .second .testimonial-card1,
+  .testimonial-section .feedback .second .testimonial-card2 {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .blog-section .blog-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .subscribe .offer {
+    width: 100%;
+    padding: 20px;
+  }
+
+  footer .subscribe .offer .get {
+    position: static;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  footer .subscribe .offer form {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .subscribe .offer form input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 10px;
+  }
+
+  footer .subscribe .offer form .sub {
+    margin: 0;
+  }
+
+  footer .subscribe .about-us {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  footer .subscribe .about-us .contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .subscribe .copyright {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/*<------------------------------ Media Queries completed ------------------------------> */
